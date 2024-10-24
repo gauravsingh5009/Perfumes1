@@ -63,8 +63,10 @@ iframe{width: 100%; height: 700px;}
 .wrap-9 ul li a{font-size: 13px; font-weight: 600;}
 .wrap-9 .social ul li{ border: 1px solid#fff; display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%; }
 
+
 @media screen and (max-width:767px){
     .wrap-9 .second.right{border-right: none;}
+    
 
 }
 @media screen and (max-width:575px){
