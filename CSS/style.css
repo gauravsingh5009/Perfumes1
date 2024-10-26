@@ -64,8 +64,8 @@ iframe{width: 100%; height: 700px;}
 .wrap-9 .social ul li{ border: 1px solid#fff; display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%; }
 
 /* Footer back to top */
-.back-to-top{width: 50px; height: 50px; border: 1px solid #fff; border-radius: 50%; background: #fff; display: none;}
-.back-to-top a{display: grid; place-items: center; padding: 5px 0;}
+.back-to-top{width: 40px; height: 40px; border: 1px solid #fff; border-radius: 50%; background: #fff; display: none;}
+.back-to-top a{display: grid; place-items: center; padding: 3px 0;}
 
 @media screen and (max-width:767px){
     .wrap-9 .second.right{border-right: none;}
