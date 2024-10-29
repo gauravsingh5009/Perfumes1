@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="wrap-1 backgroundcolor">
+    <div class="container">
+      <div class="header d-flex justify-content-between align-items-center p-3 pb-2">
+        <div class="text-center">
+          <h1>
+            <a href="index.html" class="color fs-6">
+              <img src="./Img/Logo.webp" alt="Perfume" height="100">
+              <span class="d-block color">ROYAL BALC PERFUME</span>
+            </a>
+          </h1>
+        </div>
+        <div class="d-flex align-items-center px-1">
+          <a href="#" class="mx-4"><span class="bi bi-person color fs-3"></span></a>
+          <div>
+            <a href="">
+              <span class="bi bi-bag color fs-5"></span>
+              <span class="color">Bag(0)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary backgroundcolor">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-danger"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Shop.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Men.html">MEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Women.html">WOMEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Premium.html">PREMIUM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Combos.html">COMBOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Stores.html">OUR STORES</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="checkout backgroundcolor py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                   <div class="border border-1 shadow p-3 mb-3 bg-body-tertiary rounded">
+                        <h2 class="d-flex py-3">
+                            <a href="#" class="text-warning d-block me-3">
+                                <span class="bi bi-arrow-left-circle"></span>
+                            </a>
+                            <a href="#" class="text-warning d-block fs-5">
+                                <span>ROYAL BALC PERFUME</span>
+                                <span class="d-block fs-6 text-light">Wazidpur Jaunpur</span>
+                            </a>
+                        </h2>
+                        <div class="bg-dark">
+                            <div class="border-bottom-0 gap-3 nav nav-pills" id="nav-tab">
+                                <div class="nav-item">
+                                    <a role="button" class="nav-link px-4 active" tabindex="0" href="#">Delivery</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a role="button" class="nav-link px-4" tabindex="0" href="#">Pickup</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a role="button" class="nav-link px-4" tabindex="0" href="#">Dine-in</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a role="button" class="nav-link px-4" tabindex="0" href="#">Car</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="d-flex align-items-center">
+                                <span class="bi bi-geo-alt text-warning fs-3 me-3"></span>
+                                <span class="text-warning d-block text-light">No Delivery Address Selected</span>
+                                <span class="ms-auto">
+                                    <a class="font-weight-semobold text-warning" onclick="get_address_list()" id="selectadresstext">Select</a>
+                                </span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-warning fs-5">Items Added</h2>
+                        <div class="border border-1 shadow p-3 mb-5 bg-body-tertiary rounded d-flex align-items-center justify-content-between">
+                            <h6 class="d-flex py-3 align-items-center">
+                                <a href="#" class="text-warning d-block fs-6">
+                                    <span class="bi bi-stop-circle text-success fs-4 me-1"></span>
+                                    <span>Veg Menu @ 149-Paneer 65 Pizza (Regular (Serves 1, 17.7 CM))</span>
+                                </a>
+                            </h6>
+                            <div class="d-flex align-items-center">
+                                <div class="quantity-calc d-flex align-items-center mx-3">
+                                    <button type="button" class="btn btn-warning rounded-0">-</button>
+                                    <input type="text" class="form-control rounded-0 text-center" aria-label="quantity" value="1" readonly="" style="width: 50px;">
+                                    <button type="button" class="btn btn-warning rounded-0">+</button>
+                                </div>
+                                <p class="price m-0">
+                                    <span class="bi bi-currency-rupee fs-6 d-block">499.00</span>
+                                    <del class="orignalPrice">
+                                      <span class="bi bi-currency-rupee">899.00</span>
+                                    </del>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="border border-1 shadow p-3 mb-3 bg-body-tertiary rounded">
+                        <div class="d-flex py-3">
+                            <span class="bi bi-pip-fill text-warning d-block me-3"></span>
+                            
+                            <div class="text-warning d-block fs-5">
+                                <div class="d-flex justify-content-between">
+                                    <span>ROYALBALCPERFUME200</span>
+                                    <a href="#" class="text-warning border-bottom d-block fs-6">Apply</a>
+                                </div>
+                                <span class="d-block fs-6 text-light">Add item worth 920 more to use this coupon</span>
+                            </div>
+                        </div>
+                        <div class="text-warning">
+                            <a href="#" class="text-warning border-bottom">
+                                <span>View more offers &gt;</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="text-warning fs-5">Bill Details</h2>
+                            <div class="border border-1 shadow p-3 mb-5 bg-body-tertiary rounded">
+                                <div class="table-responsive">
+                                    <table class="table align-middle table-borderless">
+                                     
+                                      <tbody>
+                                        <tr>
+                                          <td>Subtotal</td>
+                                          <td><span class="bi bi-currency-rupee fs-6 d-block">499.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>GST</td>
+                                            <td><span class="bi bi-currency-rupee fs-6 d-block">11.4</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delivery</td>
+                                            <td>Free Delivery</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="fw-bold">Grand Total</span></td>
+                                            <td><span class="bi bi-currency-rupee fs-6 d-block fw-bold">239.40</span></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </div>
+                                <div class="pay-btn">
+                                    <button type="button" class="btn btn-warning w-100 fw-bold py-2">Select Delivery Address</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="wrap-9 backgroundcolor">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-4 col-md-4 col-sm-6 text-center first right">
+            <h2 class="text-light fs-5 text-center">CONTACT US</h2>
+            <p class="text-center text-light mb-3">If you’d like to get in touch, Please send us a mail during regular business hours.</p>
+            <p class="text-center text-light mb-0 pb-5">xyz.support@world.com</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 second right">
+            <h2 class="text-light fs-5 text-center">Help & Information</h2>
+            <ul class="me-5 d-grid justify-content-center">
+              <li><a href="About.html" class="text-secondary">About Us</a></li>
+              <li><a href="Contact.html" class="text-secondary">Help & Contact</a></li>
+              <li><a href="Return.html" class="text-secondary">Refund & Return</a></li>
+              <li><a href="Track.html" class="text-secondary">Track Order</a></li>
+              <li><a href="Policy.html" class="text-secondary">Cyber Security Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h2 class="text-light fs-5 text-center mb-4 ms-3">Sign Up To Receive Offers & News</h2>
+            <form class="mx-2">
+              <div class="mb-4">
+                <input type="email" class="form-control text-light bg-dark" placeholder="Enter Your Email Address" id="exampleInputEmail1">
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn text-light border w-100">SUBSCRIBE</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="social text-center text-light">
+          <h2 class="mt-5 mb-3 fs-6">FOLLOW US</h2>
+          <ul class="d-flex align-items-center justify-content-center">
+            <li class="mx-2"><a href="#"><span class="bi bi-instagram text-light fs-3"></span></a></li>
+            <li class="mx-2"><a href="#"><span class="bi bi-facebook text-light fs-3"></span></a></li>
+            <li class="mx-2"><a href="#"><span class="bi bi-whatsapp text-light fs-3"></span></a></li>
+            <li class="mx-2"><a href="#"><span class="bi bi-pinterest text-light fs-3"></span></a></li>
+            <li class="mx-2"><a href="#"><span class="bi bi-twitter text-light fs-3"></span></a></li>
+          </ul>
+        </div>
+        <div class="copywrite text-secondary border-top py-4">
+          <div class="row d-flex justify-content-between text-center">
+            <div class="col-lg-6 col-12">
+              <p>Copyrights © 2024. All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <img src="./Img/visa-icon.svg" alt="visa" class="img-fluid mx-2">
+              <img src="./Img/rupay-icon.svg" alt="rupay" class="img-fluid mx-2">
+              <img src="./Img/payPal-icon.svg" alt="payPal" class="img-fluid mx-2">
+              <img src="./Img/maestro-icon.svg" alt="maestro" class="img-fluid mx-2">
+              <img src="./Img/axisbank-icon.svg" alt="axisbank" class="img-fluid mx-2">
+            </div>
+          </div>
+        </div>
+        <div class="back-to-top position-fixed bottom-0 end-0 me-lg-3 me-md-3 me-sm-2 me-4 mb-lg-2 mb-md-3 mb-sm-2 mb-3">
+          <a href="#"><span class="bi bi-caret-up-fill fs-5 text-warning"></span></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Back to top button -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jQuery/jsfile.js"></script>
+</body>
+</html>

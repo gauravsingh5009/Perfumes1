@@ -80,6 +80,12 @@ iframe{width: 100%; height: 700px;}
     background: #ffb91d;
 }
 
+/* Checkout */
+.nav-pills .nav-link.active{
+    color: #ffb91d !important;
+    background-color: #424242 !important;
+}
+
 
 @media screen and (max-width:767px){
     .wrap-9 .second.right{border-right: none;}
