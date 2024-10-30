@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="wrap-1">
+    <div class="container">
+        <div class="modal-content">
+			<div class="modal-header border border-0  backgroundcolor">
+				<span class="modal-title text-warning fs-5">Add New Address</span>
+				<button type="button" class=" text-warning backgroundcolor px-3 rounded fs-6" aria-label="Close">X</button>
+			 </div>
+			<div class="modal-body bg-light detailAddress">
+                <p class="text-dark py-3">A detailed address will help our delivery partner reach your doorstep easily.</p>
+                <div class="d-flex align-items-center">
+                    <span class="bi bi-geo-alt text-warning d-block me-3 fs-4"></span>
+                    <div class="text-warning d-block fs-5">
+                        <span class="fs-6 fw-bold text-dark">Wazidpur</span>
+                        <span class="d-block fs-6 text-black-50">Wazidpur Jaunpur</span>
+                    </div>
+                </div>
+
+                <h3 class="fs-6 mt-3 mb-0">CHOOSE ADDRESS TYPE</h3>
+
+                <div class="custom-radios d-flex justify-content-between py-3">
+                    <div class="d-inline-block w-100 text-center">
+                        <input type="radio" id="newAddTypeH" name="newAddType" value="Home" checked="">
+                        <label for="newAddTypeH" class="animatebtn">Home</label>
+                    </div>
+                    <div class="d-inline-block w-100 text-center">
+                        <input type="radio" id="newAddTypeW" name="newAddType" value="Office">
+                        <label for="newAddTypeW" class="animatebtn">Office</label>
+                    </div>
+                    <div class="d-inline-block w-100 text-center">
+                        <input type="radio" id="newAddTypeO" name="newAddType" value="Other">
+                        <label for="newAddTypeO" class="animatebtn">Other</label>
+                    </div>
+                </div>
+                <div class="forms mx-3">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">House / Flat / Block no.</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="House / Flat / Block no.">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Landmark</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Landmark">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Mobile Number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Locality</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Locality">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">City</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput6" placeholder="City">
+                    </div>
+                </div>
+			</div>
+            
+            
+			<div class="modal-footer">
+                <button class="btn btn-dark text-light w-100 fs-5">Save Address</button>
+			</div>
+		</div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Back to top button -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jQuery/jsfile.js"></script>
+</body>
+</html>
