@@ -87,15 +87,31 @@ iframe{width: 100%; height: 700px;}
 }
 
 /* Address*/
-.modal-content{width: 500px !important; height: auto !important; margin: auto;}
+.modal-content{max-width: 500px !important; height: auto !important;background: #fff !important; margin: auto;}
 
-/* Details Address */
-.detailAddress{width: 500px !important; height: 450px !important; margin: auto; overflow: auto;}
+/* Modal overlay (hidden by default) */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(1px); display: flex; align-items: center; justify-content: center; z-index: 1000;}
 
+/* NewAddress */
+.newaddress { position: fixed; top: 25px; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.6); z-index: 1100;}
 
 /* Search Location */
+.search-location {position: fixed; top: 25px; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); z-index: 1200;}
+
+
+/* Close button styling */
+.close-modal-btn { color: #fff; background: none; border: none;}
+  
+
+/* Search Location */
+.search-location-box{max-height: 600px; overflow: auto;}
 .search-box .position-relative{position: relative !important;}
 .search-box .position-absolute{position: absolute !important; right: 20px; top: 50%;  transform: translateY(-50%);}
+
+
+/* Details Address */
+.full-Address {position: fixed; top: 25px; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); z-index: 1300;}
+.detailAddress{max-width: 500px !important; max-height: 450px !important; margin: auto; overflow: auto;}
 
 /* Details Address */
 
@@ -123,6 +139,12 @@ iframe{width: 100%; height: 700px;}
 }
 
 
+.list-wrap .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 @media screen and (max-width:767px){
     .wrap-9 .second.right{border-right: none;}
     
@@ -131,3 +153,8 @@ iframe{width: 100%; height: 700px;}
 @media screen and (max-width:575px){
     .wrap-9 .first.right{border-right: none;}
 }
+
+
+  
+  
+  
