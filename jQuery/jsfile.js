@@ -44,10 +44,19 @@ $(function(){
       $('.selectLocalities').click(function() {
         $('#SearchLocation').fadeOut();
         $('#fullAddress').fadeIn();
-      })
+      });
 
       // Close Detail Button
       $('#closeDetailsBtn').click(function() {
         $('#fullAddress').fadeOut();
-      })
+      });
+
+      // Apply Coupon
+      $('#moreOffers').click(function() {
+        $('#coupon').fadeIn();
+      });
+      // close button
+      $('#circleBackBtn').click(function() {
+        $('#coupon').fadeOut();
+      });
 });
